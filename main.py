@@ -1,10 +1,18 @@
+
 from currency_exchange_tool import currency_convert
-from shop_functions import start_shop
+from shop_functions import *
+from pyfiglet import Figlet
+from currency_exchange_tool import *
 
-print('Welcome to my shop')
+font = Figlet(font='alligator')
 
-while True:
-    print('Please select what you would like to buy')
-    items_to_buy = start_shop()
 
-    # blah blah 
+print(font.renderText('Welcome to my shop'))
+main()
+
+# cc = input("Enter currency code please - ")
+# ccr = get_currency_conversion(cc)
+# print(ccr)
+
+# actual_cost = currency_convert(ccr, total_cost)
+# print(actual_cost)
